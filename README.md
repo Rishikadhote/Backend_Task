@@ -37,14 +37,12 @@ A real-time Emergency Room Queue Management System built using Node.js and Expre
 
 ## 🚀 Installation
 
-```bash
+```
 git clone https://github.com/yourusername/er-queue-api.git
 cd er-queue-api
 npm install
 npm run dev
-
-```markdown
-## 📡 API Documentation
+```
 
 ### ➕ POST /api/patients
 
@@ -53,24 +51,28 @@ Adds a new patient to the queue.
 #### Request Body:
 ```json
 {
-  "name": "John Doe",
+  "name": "Rishika Dhote",
   "triageLevel": 2
 }
 
 {
   "id": "uuid",
-  "name": "John Doe",
+  "name": "Rishika Dhote",
   "triageLevel": 2,
   "status": "waiting"
 }
 
+```
+## GET /api/patients
+Get current queue of all patients.
 
----
+## PATCH /api/patients/:id/start
+Mark patient as "being treated".
 
-### 🔹 Step 8: Real-Time Events via WebSocket
+## PATCH /api/patients/:id/discharge
+Discharge a patient.
 
-```markdown
-## 🔴 Real-Time WebSocket Events
+##  Real-Time WebSocket Events
 
 - `critical_alert`: Sent when a Level 1 patient arrives
 - `queue_update`: Sent on every change in patient queue
@@ -83,7 +85,7 @@ Adds a new patient to the queue.
 
 ```bash
 npm test
-
+```
 ## 👨‍💻 Author
 
 - Name: Rishika Dhote
