@@ -56,6 +56,7 @@ Adds a new patient to the queue.
 }
 ```
 ### Response :  
+```
 {
   "id": "uuid",
   "name": "Rishika Dhote",
