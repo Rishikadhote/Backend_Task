@@ -54,7 +54,8 @@ Adds a new patient to the queue.
   "name": "Rishika Dhote",
   "triageLevel": 2
 }
-
+```
+### Response :  
 {
   "id": "uuid",
   "name": "Rishika Dhote",
